@@ -64,3 +64,21 @@ const report = {
 
 };
 
+console.log('%cPágina: ' + report.pagina + ' | URL: ' + report.url, 'color:#555');
+console.log('');
+
+
+console.log('  Formulários com GET:', report.formularios.filter(f => f.method === 'GET').length);
+console.log('  Links sem destino:', report.links_sem_destino.length);
+
+
+console.log('  Inputs sem label:', report.inputs_sem_label.length);
+console.log('  Botões sem texto:', report.botoes_sem_texto.length);
+console.log('  Meta description:', report.meta_description.substring(0, 80));
+
+console.log('  Imagens sem alt:', report.imagens_sem_alt.length);
+
+console.log('');
+
+console.log(JSON.stringify(report, null, 2));
+
