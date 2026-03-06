@@ -1,0 +1,271 @@
+========================================
+PÁGINA 1 — qualidade.apprbs.com.br/certificacao
+========================================
+
+Item 01 - Botões "Saiba mais" sem link configurado
+Tipo: Correção
+Classificação: Utilidade
+Prioridade: Alta
+Descrição: Três botões com o texto "Saiba mais" estão sem URL configurada. Ao clicar, nada acontece. O usuário que tenta acessar mais informações fica preso na página sem entender o motivo.
+
+---
+
+Item 02 - Botão "Quero me certificar" redirecionando para o Google
+Tipo: Correção
+Classificação: Utilidade
+Prioridade: Alta
+Descrição: Um dos três botões "Quero me certificar" da página está com o link apontando para https://google.com.br/ em vez do destino correto. Os outros dois redirecionam para https://rubeus.com.br/, o que também merece revisão para garantir que levam à página correta do processo de certificação.
+
+---
+
+Item 03 - Formulário de inscrição trava ao avançar — campo obrigatório invisível
+Tipo: Correção
+Classificação: Utilidade
+Prioridade: Alta
+Descrição: Ao preencher todos os campos visíveis do formulário "Inscreva-se agora" e clicar em avançar, aparece a mensagem "é necessário informar a base legal". Não há nenhum campo de base legal visível na tela para o usuário preencher. O formulário fica travado sem saída clara, impedindo a conclusão da inscrição.
+
+---
+
+Item 04 - Formulários enviando dados pessoais via método GET
+Tipo: Correção
+Classificação: Utilidade
+Prioridade: Alta
+Descrição: Os formulários da página estão configurados com method="get", fazendo os dados preenchidos pelo usuário (nome e telefone) aparecerem diretamente na URL do navegador. Isso expõe informações pessoais no histórico do navegador e em logs de servidor. O correto para formulários com dados pessoais é usar method="post".
+
+---
+
+Item 05 - Inconsistência visual entre os botões de ação da página
+Tipo: Correção
+Classificação: Usabilidade
+Prioridade: Média
+Descrição: Os botões "Saiba mais" e "Quero me certificar" aparecem com cores de fundo diferentes ao longo da página. Além disso, o arredondamento dos botões não segue um padrão único, quebrando a consistência visual esperada numa interface de produto.
+
+---
+
+Item 06 - Seção do formulário desalinhada verticalmente em relação ao conteúdo ao lado
+Tipo: Correção
+Classificação: Usabilidade
+Prioridade: Média
+Descrição: A div que contém o formulário de inscrição aparece levemente deslocada para baixo em relação à coluna de conteúdo ao lado. O desalinhamento é visível na comparação entre as duas colunas da seção, prejudicando a aparência geral do layout.
+
+---
+
+Item 07 - Texto e elementos saindo para fora das divs na seção de detalhes
+Tipo: Correção
+Classificação: Usabilidade
+Prioridade: Média
+Descrição: Em uma das seções da página, alguns elementos de texto extrapolam os limites das suas colunas. O conteúdo fica espalhado de forma irregular, sem alinhamento consistente com a coluna ao lado. Visualmente dá a impressão de que o layout não foi finalizado.
+
+---
+
+Item 08 - Imagens dos depoimentos distorcidas — recorte oval sem centralização correta
+Tipo: Correção
+Classificação: Usabilidade
+Prioridade: Média
+Descrição: As imagens circulares da seção de depoimentos não estão centralizadas corretamente dentro do recorte oval. O rosto ou elemento principal da imagem aparece cortado ou deslocado, indicando que a foto não foi ajustada para o formato aplicado via CSS.
+
+---
+
+Item 09 - Erro de digitação em botão de ação — "Salba mais" em vez de "Saiba mais"
+Tipo: Correção
+Classificação: Usabilidade
+Prioridade: Média
+Descrição: Um dos botões de chamada para ação exibe o texto "Salba mais" em vez de "Saiba mais". O erro aparece na quarta ocorrência do botão na página. Passa despercebido numa leitura rápida, mas compromete a credibilidade do conteúdo.
+
+---
+
+Item 10 - Texto "Saiba" cortado em um dos botões de ação
+Tipo: Correção
+Classificação: Usabilidade
+Prioridade: Média
+Descrição: Um dos botões da seção de cursos exibe apenas "Saiba" em vez de "Saiba mais". O texto está incompleto, provavelmente por um problema na edição do componente no construtor de páginas.
+
+---
+
+Item 11 - Meta description da página com texto Lorem Ipsum
+Tipo: Correção
+Classificação: Usabilidade
+Prioridade: Média
+Descrição: A meta description da página contém texto genérico de preenchimento (Lorem ipsum...). Esse texto é exibido nos resultados de busca do Google como descrição da página, prejudicando a imagem da instituição e o posicionamento em buscadores.
+
+---
+
+Item 12 - Campo "Profissão" com tooltip descrevendo outro campo
+Tipo: Correção
+Classificação: Usabilidade
+Prioridade: Média
+Descrição: O campo de profissão no formulário possui o texto auxiliar com o conteúdo "Indique aqui a sua data de nascimento", que pertence a outro campo. Parece que o campo foi copiado sem atualizar o texto. Pode confundir o usuário no preenchimento.
+
+---
+
+Item 13 - Mensagem de validação com erro de digitação — "Prencha" em vez de "Preencha"
+Tipo: Correção
+Classificação: Usabilidade
+Prioridade: Média
+Descrição: Ao tentar avançar sem preencher campos obrigatórios, aparece a mensagem "Prencha este campo" em vez de "Preencha este campo". O erro está presente em múltiplos campos (nome, ano de formação, profissão), indicando que o template de validação foi reutilizado sem revisão.
+
+---
+
+Item 14 - Parágrafos vazios usados como espaçamento no conteúdo
+Tipo: Melhoria
+Classificação: Desejabilidade
+Prioridade: Baixa
+Descrição: Foram encontrados parágrafos HTML completamente vazios sendo utilizados para criar espaçamento visual entre seções. A prática correta seria usar propriedades CSS como margin ou padding. Da forma atual, o espaçamento pode se comportar de forma inconsistente em diferentes navegadores e tamanhos de tela.
+
+---
+
+Item 15 - Conteúdo Lorem Ipsum em múltiplas seções da página
+Tipo: Correção
+Classificação: Usabilidade
+Prioridade: Média
+Descrição: Foram encontradas diversas ocorrências de texto Lorem Ipsum espalhadas pela página, incluindo títulos e parágrafos de seções de conteúdo. Esses textos são claramente placeholders que não foram substituídos pelo conteúdo real, indicando que a página foi publicada antes de estar finalizada.
+
+---
+
+Item 16 - 17 imagens sem descrição alternativa (atributo alt)
+Tipo: Melhoria
+Classificação: Desejabilidade
+Prioridade: Baixa
+Descrição: Todas as 17 imagens da página estão sem o atributo alt. Além de ser um requisito básico de acessibilidade para usuários com deficiência visual, a ausência do alt também impacta negativamente o SEO da página. Isso inclui banners, fotos de depoimentos e ícones de redes sociais.
+
+---
+
+Item 17 - Ícones de redes sociais no rodapé desproporcionais
+Tipo: Melhoria
+Classificação: Desejabilidade
+Prioridade: Baixa
+Descrição: Os ícones de Facebook, Instagram, LinkedIn e TikTok no rodapé estão visivelmente achatados e desproporcionais, indicando que as imagens não estão sendo exibidas no tamanho correto. Além disso, estão sem atributo alt, então leitores de tela não conseguem identificar para onde os links levam.
+
+
+========================================
+PÁGINA 2 — qualidade.apprbs.com.br/site
+========================================
+
+Item 01 - Formulário trava ao concluir — campo obrigatório invisível (base legal)
+Tipo: Correção
+Classificação: Utilidade
+Prioridade: Alta
+Descrição: Ao preencher nome, e-mail e telefone no formulário de newsletter e clicar em concluir, aparece a mensagem "é necessário informar a base legal". Não existe nenhum campo de base legal visível na tela. O usuário fica impossibilitado de concluir o cadastro sem entender o motivo. O mesmo problema foi identificado na página /certificacao, indicando que é um erro sistêmico da plataforma.
+
+---
+
+Item 02 - Formulários enviando dados pessoais via método GET
+Tipo: Correção
+Classificação: Utilidade
+Prioridade: Alta
+Descrição: Os 3 formulários da página estão configurados com method="get", fazendo os dados preenchidos (nome e e-mail) aparecerem diretamente na URL do navegador. Informações pessoais ficam expostas no histórico do navegador e em logs de servidor. O correto é usar method="post".
+
+---
+
+Item 03 - Botões de navegação do slideshow não funcionam
+Tipo: Correção
+Classificação: Utilidade
+Prioridade: Alta
+Descrição: O carrossel de imagens da seção principal possui botões de avançar e voltar que chamam uma função JavaScript, mas a função não está implementada na página. Ao clicar nos botões nada acontece, deixando o slideshow estático. Os 3 slides existentes ficam inacessíveis para o usuário.
+
+---
+
+Item 04 - Ícones de contato com espaçamentos inconsistentes e textos desalinhados
+Tipo: Correção
+Classificação: Usabilidade
+Prioridade: Média
+Descrição: Na seção de canais de atendimento, os ícones estão com espaçamentos e distâncias entre si diferentes. Os textos "Atendimento" e "WhatsApp" aparecem muito distantes dos ícones correspondentes, quebrando a associação visual entre ícone e rótulo.
+
+---
+
+Item 05 - Botões "Inscreva-se" do slideshow desalinhados com o texto acima
+Tipo: Correção
+Classificação: Usabilidade
+Prioridade: Média
+Descrição: Nos slides 1 e 2 do carrossel, o botão "Inscreva-se" aparece deslocado em relação ao bloco de texto posicionado acima dele. O desalinhamento quebra a hierarquia visual esperada entre título e chamada para ação.
+
+---
+
+Item 06 - Quarto card da seção de diferenciais com título fora do padrão visual
+Tipo: Correção
+Classificação: Usabilidade
+Prioridade: Média
+Descrição: Na seção de diferenciais, os três primeiros cards seguem o mesmo layout de título. O quarto card ("Laboratórios e equipamentos") tem o texto com alinhamento diferente dos demais, quebrando a consistência visual da seção.
+
+---
+
+Item 07 - Campo de telefone sem indicação de obrigatoriedade (asterisco ausente)
+Tipo: Correção
+Classificação: Usabilidade
+Prioridade: Média
+Descrição: No formulário de newsletter, os campos Nome e E-mail possuem asterisco (*) indicando que são obrigatórios, mas o campo Telefone não tem essa marcação. Isso gera inconsistência visual e pode confundir o usuário sobre o que precisa ou não ser preenchido.
+
+---
+
+Item 08 - Botão de envio do formulário grudado no último campo de preenchimento
+Tipo: Correção
+Classificação: Usabilidade
+Prioridade: Média
+Descrição: O botão de conclusão do formulário de newsletter aparece colado ao último campo de input, sem espaçamento adequado entre eles. Visualmente dá a impressão de que o botão faz parte do campo, e não de uma ação de envio separada.
+
+---
+
+Item 09 - Seção de redes sociais com alinhamentos verticais inconsistentes
+Tipo: Correção
+Classificação: Usabilidade
+Prioridade: Média
+Descrição: Na seção de redes sociais, cada bloco tem seu texto em uma posição vertical diferente — uns alinhados ao topo, outros à base do elemento. O resultado visual é irregular. Além disso, o bloco do LinkedIn está sem a linha vertical separadora que os outros blocos possuem, quebrando o padrão da seção.
+
+---
+
+Item 10 - Ícones de redes sociais no rodapé com tamanhos e espaçamentos diferentes
+Tipo: Correção
+Classificação: Usabilidade
+Prioridade: Média
+Descrição: Os ícones de Facebook, LinkedIn, YouTube e Instagram no rodapé aparecem em tamanhos diferentes entre si e com espaçamentos irregulares. As imagens não possuem width e height definidos, o que faz o layout depender do tamanho original de cada arquivo, gerando inconsistência visual.
+
+---
+
+Item 11 - Meta description com texto genérico — "Site exemplo"
+Tipo: Correção
+Classificação: Usabilidade
+Prioridade: Média
+Descrição: A meta description da página contém apenas o texto "Site exemplo", que é claramente um placeholder. Esse texto aparece como descrição da página nos resultados de busca do Google, prejudicando tanto a imagem da instituição quanto o posicionamento em buscadores.
+
+---
+
+Item 12 - Mensagem de validação com erro de digitação — "Prencha" em vez de "Preencha"
+Tipo: Correção
+Classificação: Usabilidade
+Prioridade: Média
+Descrição: O campo Nome do formulário exibe a mensagem "Prencha este campo" ao tentar avançar sem preenchimento. O mesmo erro foi identificado na página /certificacao, reforçando que o problema está no template de validação compartilhado entre as páginas.
+
+---
+
+Item 13 - Texto do formulário de newsletter alinhado à direita — pouco intuitivo
+Tipo: Melhoria
+Classificação: Desejabilidade
+Prioridade: Baixa
+Descrição: O bloco de texto ao lado do formulário de newsletter está com alinhamento à direita, o que é incomum para textos de apresentação. A leitura da esquerda para a direita é o padrão esperado pelo usuário, e o alinhamento atual torna o texto menos confortável de ler.
+
+---
+
+Item 14 - Borda dos cards de diferenciais muito fina e clara
+Tipo: Melhoria
+Classificação: Desejabilidade
+Prioridade: Baixa
+Descrição: Os 4 cards da seção de diferenciais possuem contorno, mas ele está tão fino e com cor tão clara que praticamente não é percebido. A borda perde sua função de delimitar e separar os elementos. Aumentar a espessura ou escurecer a cor melhoraria a legibilidade da seção.
+
+---
+
+Item 15 - 32 imagens sem descrição alternativa (atributo alt)
+Tipo: Melhoria
+Classificação: Desejabilidade
+Prioridade: Baixa
+Descrição: Todas as 32 imagens da página estão sem o atributo alt, prejudicando a acessibilidade para usuários com deficiência visual e impactando negativamente o SEO. As imagens afetadas incluem banners do carrossel, logos de parceiros, fotos de depoimentos e ícones de redes sociais.
+
+
+========================================
+OBSERVAÇÃO SOBRE A METODOLOGIA
+========================================
+
+A análise foi feita em duas etapas. Primeiro naveguei pelas páginas como um usuário comum: testei os botões, preenchi os formulários, li os textos e observei o comportamento visual em diferentes seções.
+
+Na segunda etapa, desenvolvi um script JavaScript executado no console do navegador para identificar automaticamente problemas estruturais como imagens sem alt, links sem destino, configuração incorreta dos formulários e meta description.
+
+O script está disponível no repositório: https://github.com/Ribeirotmr/qa-page-analyzer
